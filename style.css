@@ -1,0 +1,37 @@
+v* {
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  .event-container {
+    width: 80%;
+    border: 1px solid #00000020;
+    border-radius: 5px;
+    margin-right: 500px;
+    background-color: rgb(190, 187, 146);
+    margin-bottom: 50px; 
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+  
+  body {
+    padding: 200px;
+    text-align: left;
+    background-color: #498dbb;
+  }
+  
+  .logo {
+    margin-bottom: 50px; 
+    width: 800px;
+    height: 300px;
+    border-radius: 50px;
+  }
+  .nyclogo {
+    margin-bottom: 50px; 
+    width: 800px;
+    height: 300px;
+    border-radius: 50px;
+  }
+  
