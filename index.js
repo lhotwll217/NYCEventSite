@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // .then(events => events.forEach(event => {
     //     console.log(event.startdate)
-})
-
-
-
-
-
+});
 
 function renderTodayEvents(events) {
 
@@ -41,6 +36,11 @@ function renderTodayEvents(events) {
             let eventH2 = document.createElement('div')
             let eventImg = document.createElement('img')
             let eventDescription = document.createElement('p')
+            let attendP = document.createElement('p')
+            let attendBtn = document.createElement('button')
+            let attendTxt = document.createElement('span')
+
+
             // let eventTime = document.createElement('p')
             // let eventLocation = document.createElement('p')
 
@@ -49,12 +49,40 @@ function renderTodayEvents(events) {
             eventH2.textContent = e.title
             eventImg.src = e.image
             eventDescription.innerHTML = `<div> ${e.description} </div > `
+            attendBtn.textContent = "Attending?"
+            attendTxt.textContent = `0 people attending.`
             // eventTime.textContent = `${e.starttime} - ${e.endtime} `
             // eventLocation.textContent = e.location
 
-            eventContainer.append(eventH2, eventImg, eventDescription, eventLocation)
-            document.querySelector('body').append(eventContainer)
+            attendBtn.addEventListener('click', () => {
+                // document.querySelector('span').textContent = "1 likes"
 
+
+                attendingArray = document.querySelector('span').textContent.split(' ')
+                // console.log(likes)
+                // newArray = likes
+                let attendingNumber = attendingArray[0]
+                let attendingPeople = attendingArray[1]
+                let attendingAttending = attendingArray[2]
+                console.log(attendingNumber)
+
+                function incrementalAttendance(x) {
+
+                    let attendingNumber = parseInt(x);
+                    attendingNumber++
+                    console.log(attendingNumber)
+                    // let newArray = [likeNumber, likes]
+                    attendTxt.textContent = (attendingNumber + ' ' + attendingPeople + ' ' + attendingAttending);
+
+                }
+
+                incrementalAttendance(attendingNumber)
+
+            })
+
+            attendP.append(attendBtn, attendTxt)
+            eventContainer.append(eventH2, eventImg, eventDescription, attendP)
+            document.querySelector('body').append(eventContainer)
 
 
 
@@ -79,7 +107,30 @@ function renderTodayEvents(events) {
 
 }
 
+// document.querySelector('button').addEventListener('click', () => {
+//     // document.querySelector('span').textContent = "1 likes"
 
 
+//     attendingArray = document.querySelector('span').textContent.split(' ')
+//     // console.log(likes)
+//     // newArray = likes
+//     let attendingNumber = attendingArray[0]
+//     let attendingPeople = attendingArray[1]
+//     let attendingAttending = attendingArray[2]
+//     console.log(likeNumber)
 
+//     function incrementalAttendance(x) {
+
+//         let attendingNumber = parseInt(x);
+//         attendingNumber++
+//         console.log(attendingNumber)
+//         // let newArray = [likeNumber, likes]
+//         // document.querySelector('span').textContent = (likeNumber + ' ' + likes);
+//     }
+// })
+
+// incrementalLiker(attendingNumber)
+
+
+// })
 
