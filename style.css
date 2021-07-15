@@ -1,38 +1,157 @@
-v* {
-  margin: 0;
-  box-sizing: border-box;
-
-}
 
 .event-container {
-  width: 100%;
-  border: 10px solid #00000020;
+  width: 60%;
+  border: 5px solid #060b13dc;
   border-radius: 5px;
-  margin-right: 500px;
-  background-color: rgb(190, 187, 146);
+  margin: 0 auto;
+    display: block;
+  /* margin-right: 500px;
+  margin-left: 250px; */
+  background-color: rgb(179, 212, 218);
   margin-bottom: 50px; 
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
-}
-
-body {
-  padding: 200px;
-  text-align: left;
-  background-color: #498dbb;
+  /* overflow: auto; */
+  background-image: url("https://textures.world/wp-content/uploads/2018/10/Natural-Seamless-Light-Wood-Texture-1-copy.jpg");
+  object-fit: contain;
 }
 
 .logo {
-  margin-bottom: 50px; 
-  width: 600px;
-  height: 300px;
+  margin-bottom: 30px; 
+  margin-left: 250px;
+  width: 500px;
+  height: 250px;
   border-radius: 50px;
-  border: 10px solid #00000020; 
+  border: 5px solid #060b13dc;
 }
 .nyclogo {
-  margin-bottom: 50px; 
-  width: 825px;
-  height: 300px;
+  /* margin-bottom: 30px; */
+  width: 600px;
+  height: 250px;
   border-radius: 50px;
-  border: 10px solid #00000020;
+  border: 5px solid #060b13dc;
+  /* margin-left: 25%; */
+  margin: 25px auto;
+  display: block;
+  /* margin-right: auto; */
 }
+
+button{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 40px;
+  border-color: rgb(37, 32, 25);
+  margin-bottom: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+button:active {
+  color: rgb(241, 71, 19);
+}
+button:hover {
+  color: rgb(241, 71, 19);
+}
+input {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-color: dodgerblue;
+  box-shadow: dodgerblue;
+  width: 200px;
+  height: 40px;
+};
+input:active {
+  color: rgb(241, 71, 19);
+}
+input:hover {
+  color: rgb(241, 71, 19);
+}
+
+
+p {
+  margin-left: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  /* margin-left: 25%; */
+  font-style: italic;
+  background-color: bisque;
+  padding: 20px;
+  display: inline-block;
+  border-width: 10px;
+  border-color: black;
+  border-radius: 7px;
+  margin: 0 auto;
+    display: block;
+}
+img {
+
+  max-width: 100%;
+  max-height: 100%;
+  /* width: 600px;
+  height: 300px; */
+  margin-left: 15px;
+  border-radius: 20px;
+  
+}
+body {
+  padding: 200px;
+  text-align: left 20px;
+  background-color: #498dbb;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.comment-div {
+
+  background-color: bisque;
+  margin : 15px;
+  border-color: black;
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+  border-color: black;
+  border: 5px solid #060b13dc;
+  border-width: 3px;
+  
+}
+
+h3 {
+  font-weight: bold;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.posted-comments {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  /* font-weight: bold; */
+}
+
+#tomorrowBTN {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  border: 3px solid #e7e7e7;
+  font-size: 24px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 400px;
+  height: 85px;
+  margin-bottom:25px ;
+  margin: 25px auto;
+    display: block;
+
+
+    
+  }
+
+  h2 {
+    padding: 20px;
+  }
+  
